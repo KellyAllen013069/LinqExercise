@@ -109,7 +109,7 @@ namespace LinqExercise
 
             //DONE: Now print the Average of the employees' YearsOfExperience if their YOE is less than or equal to 10 AND Age is greater than 35.
             var employeesAvgYoe = employees
-                .Where(e => e.YearsOfExperience <= 10 && e.Age < 35)
+                .Where(e => e.YearsOfExperience <= 10 && e.Age > 35)
                 .Average(e => e.YearsOfExperience);
             Console.WriteLine($"Average of employees YOE if YOE <= 10 and age > 35: {employeesAvgYoe}");
             Console.WriteLine("-----------------------------");
